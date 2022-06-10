@@ -8,7 +8,7 @@ pipeline {
         stage("First step") {
             steps {
               
-                sh 'docker-compose up'
+                sh 'docker build -t misha1607/node:latest . '
                 }
             }
         }
